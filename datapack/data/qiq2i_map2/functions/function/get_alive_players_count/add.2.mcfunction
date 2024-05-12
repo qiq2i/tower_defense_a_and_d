@@ -1,0 +1,1 @@
+$execute if data storage qiq2i_map2 player[{id:$(id)b,state:"play"}] run scoreboard players add #qiq2i_marker.2 qiq2i_1 1
