@@ -1,5 +1,5 @@
 ##游戏状态修改
-#data modify storage qiq2i_map2 game_state.value set value "start"
+data modify storage qiq2i_map2 game_state.value set value "start"
 
 ##删除重创记分板
 scoreboard objectives remove qiq2i_map2
