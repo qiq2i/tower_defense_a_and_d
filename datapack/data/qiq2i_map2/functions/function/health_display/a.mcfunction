@@ -1,0 +1,1 @@
+$scoreboard players operation $(color_name) qiq2i_map2.display.1 = @s qiq2i_map2.health
