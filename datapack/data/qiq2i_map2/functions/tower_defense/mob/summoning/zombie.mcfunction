@@ -1,0 +1,2 @@
+##由存储实体执行
+$execute as @e[type=marker,tag=qiq2i_map2.summoning,tag=!qiq2i_map2.summoning.$(id)] at @s summon minecraft:zombie run function qiq2i_map2:tower_defense/mob/summoning/set_value/zombie {id:$(id)}
