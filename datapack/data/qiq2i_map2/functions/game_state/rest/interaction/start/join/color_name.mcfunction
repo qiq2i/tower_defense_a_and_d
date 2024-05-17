@@ -1,0 +1,5 @@
+$data modify entity @s data.color_name set value "§f$(name)"
+$execute if score #qiq2i_marker qiq2i_1 matches 1 run data modify entity @s data.color_name set value "§c$(name)"
+$execute if score #qiq2i_marker qiq2i_1 matches 2 run data modify entity @s data.color_name set value "§e$(name)"
+$execute if score #qiq2i_marker qiq2i_1 matches 3 run data modify entity @s data.color_name set value "§b$(name)"
+$execute if score #qiq2i_marker qiq2i_1 matches 4 run data modify entity @s data.color_name set value "§a$(name)"
