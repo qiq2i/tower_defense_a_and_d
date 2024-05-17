@@ -32,6 +32,9 @@ execute as @e[tag=qiq2i_map2.player] run scoreboard players set @s qiq2i_map2.in
 execute as @e[tag=qiq2i_map2.player] run scoreboard players set @s qiq2i_map2.money 100
 execute as @e[tag=qiq2i_map2.player] run scoreboard players set @s qiq2i_map2.health 20
 
+##侧边显示血量
+function qiq2i_map2:function/health_display
+
 ##怪物起点与终点
 kill @e[tag=qiq2i_map2.summoning]
 kill @e[tag=qiq2i_map2.home]
