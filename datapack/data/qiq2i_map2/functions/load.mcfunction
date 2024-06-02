@@ -4,6 +4,8 @@ scoreboard objectives add qiq2i_tower.mob.H dummy
 scoreboard objectives add qiq2i_tower.mob.M dummy
 scoreboard objectives add qiq2i_tower.mob.money dummy
 scoreboard objectives add qiq2i_tower.mob.fx dummy
+scoreboard objectives add qiq2i_map2.tower.id dummy
+scoreboard objectives add qiq2i_map2.tower.level dummy
 scoreboard objectives add qiq2i_map2.ui trigger
 forceload add 0 0 111 111
 
