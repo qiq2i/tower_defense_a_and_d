@@ -1,0 +1,2 @@
+$title @a[nbt={UUID:$(uuid)}] actionbar [{"text":"§e收入（"},{"bold":true,"color":"yellow","score":{"name":"#qiq2i_map2.time.1","objective":"qiq2i_1"}},{"text":"§e秒）："},{"bold":true,"color":"yellow","score":{"name":"@s","objective":"qiq2i_map2.income"}},{"text":"        §e金币："},{"bold":true,"color":"yellow","score":{"name":"@s","objective":"qiq2i_map2.money"}}]
+#qiq2i_map2.time.1
