@@ -6,8 +6,14 @@ $execute if data storage qiq2i_map2 temp_ui_select{ui_id:"summoning.zombie"} run
 ##召唤鲶鱼
 $execute if data storage qiq2i_map2 temp_ui_select{ui_id:"summoning.guardian"} run function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"guardian",tellraw:1}
 
+##建防御塔
+#1
+function qiq2i_map2:ui/marker/main/select/attack_ui/tower with storage qiq2i_map2 temp_ui_select
+
 ##重开界面
-execute on vehicle on passengers if entity @s[type=marker,tag=qiq2i_map2.ui.main] run function qiq2i_map2:ui/pages/summoning/open with entity @s data
+$execute on vehicle on passengers if entity @s[type=marker,tag=qiq2i_map2.ui.main] run function qiq2i_map2:ui/pages/$(page)/open with entity @s data
+#建防御塔界面强制关闭
+$execute if data storage qiq2i_map2 temp_ui_select{page:"tower_build"} as @a[nbt={UUID:$(uuid)},limit=1] run function qiq2i_map2:ui/close {uuid:$(uuid)}
 
 ##音效
 $execute as @a[nbt={UUID:$(uuid)}] at @s run playsound ui.button.click ambient @s
