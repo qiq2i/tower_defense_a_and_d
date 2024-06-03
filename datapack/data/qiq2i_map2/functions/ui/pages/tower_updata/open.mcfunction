@@ -1,5 +1,5 @@
 ##由核心标记qiq2i_map2.ui.main执行
-data modify entity @s data.page set value "tower_build"
+data modify entity @s data.page set value "tower_updata"
 
 ##清空物品展示实体
 execute on vehicle on passengers if entity @s[type=item_display] run kill @s
@@ -12,9 +12,9 @@ function qiq2i_map2:ui/summoning_ui {id:"none",x:-1,y:0,item:"minecraft:glass_pa
 function qiq2i_map2:ui/summoning_ui {id:"none",x:-1,y:1,item:"minecraft:glass_pane",enchant:0}
 function qiq2i_map2:ui/summoning_ui {id:"none",x:-1,y:2,item:"minecraft:glass_pane",enchant:0}
 
-function qiq2i_map2:ui/summoning_ui {id:"none",x:0,y:0,item:"minecraft:glass_pane",enchant:0}
+function qiq2i_map2:ui/summoning_ui {id:"none",x:0,y:2,item:"minecraft:glass_pane",enchant:0}
 function qiq2i_map2:ui/summoning_ui {id:"updata",x:0,y:1,item:"minecraft:campfire",enchant:0}
-function qiq2i_map2:ui/summoning_ui {id:"remove",x:0,y:2,item:"minecraft:redstone_block",enchant:0}
+function qiq2i_map2:ui/summoning_ui {id:"remove",x:0,y:0,item:"minecraft:redstone_block",enchant:0}
 
 function qiq2i_map2:ui/summoning_ui {id:"none",x:1,y:0,item:"minecraft:glass_pane",enchant:0}
 function qiq2i_map2:ui/summoning_ui {id:"none",x:1,y:1,item:"minecraft:glass_pane",enchant:0}
