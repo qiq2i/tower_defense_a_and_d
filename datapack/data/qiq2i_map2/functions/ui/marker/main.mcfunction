@@ -47,6 +47,9 @@ execute if score #qiq2i_map2.temp_ui_select.1 qiq2i_1 matches 750..2150 run data
 ##玩家uuid
 $data modify storage qiq2i_map2 temp_ui_select.uuid set value $(uuid)
 
+##界面id
+execute on vehicle on passengers if entity @s[type=marker,tag=qiq2i_map2.ui.main] run data modify storage qiq2i_map2 temp_ui_select.page set from entity @s data.page
+
 ##选择的地点-来自核心标记
 execute on vehicle on passengers if entity @s[type=marker,tag=qiq2i_map2.ui.main] run data modify storage qiq2i_map2 temp_ui_select.facing_pos_x set from entity @s data.facing_pos_x
 execute on vehicle on passengers if entity @s[type=marker,tag=qiq2i_map2.ui.main] run data modify storage qiq2i_map2 temp_ui_select.facing_pos_y set from entity @s data.facing_pos_y
