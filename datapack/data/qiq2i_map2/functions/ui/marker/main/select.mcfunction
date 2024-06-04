@@ -26,6 +26,8 @@ $execute on vehicle on passengers if data entity @s[type=item_display,tag=qiq2i_
 ##获取玩家选取-建设防御塔
 $execute on vehicle on passengers if data entity @s[type=item_display,tag=qiq2i_map2.ui] item.components."minecraft:custom_data"{uuid:$(uuid),x:$(x),y:$(y),id:"tower.1"} run function qiq2i_map2:function/ui/display_tower_in_ui with storage qiq2i_map2 temp_ui_select
 
-
 ##获取玩家选取-升级防御塔
-$execute on vehicle on passengers if data entity @s[type=item_display,tag=qiq2i_map2.ui] item.components."minecraft:custom_data"{uuid:$(uuid),x:$(x),y:$(y),id:"updata"} run function qiq2i_map2:function/ui/display_tower_in_ui with storage qiq2i_map2 temp_ui_select
+$execute on vehicle on passengers if data entity @s[type=item_display,tag=qiq2i_map2.ui] item.components."minecraft:custom_data"{uuid:$(uuid),x:$(x),y:$(y),id:"updata"} run function qiq2i_map2:function/ui/display_tower_updata_in_ui with storage qiq2i_map2 temp_ui_select
+
+##获取玩家选取-移除防御塔
+$execute on vehicle on passengers if data entity @s[type=item_display,tag=qiq2i_map2.ui] item.components."minecraft:custom_data"{uuid:$(uuid),x:$(x),y:$(y),id:"remove"} on vehicle on passengers if entity @s[type=text_display,tag=qiq2i_map2.ui.text] run data modify entity @s text set value '[{"text":"§c移除防御塔"}]'
