@@ -7,6 +7,7 @@ scoreboard objectives add qiq2i_tower.mob.fx dummy
 scoreboard objectives add qiq2i_map2.tower.id dummy
 scoreboard objectives add qiq2i_map2.tower.level dummy
 scoreboard objectives add qiq2i_map2.ui trigger
+scoreboard objectives add qiq2i_map2.use.coas minecraft.used:minecraft.carrot_on_a_stick
 forceload add 0 0 111 111
 
 ##tick4
