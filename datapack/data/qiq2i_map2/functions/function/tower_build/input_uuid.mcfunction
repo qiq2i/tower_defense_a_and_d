@@ -9,7 +9,7 @@ $data modify storage qiq2i_map2 tower_build_temp.id set from entity @e[type=mark
 $data modify storage qiq2i_map2 tower_build_temp.tower_id set value "$(tower_id)"
 $data modify storage qiq2i_map2 tower_build_temp.num set from storage qiq2i_map2 tower[{id:$(tower_id)}].num
 $data modify storage qiq2i_map2 tower_build_temp.name set from storage qiq2i_map2 tower[{id:$(tower_id)}].name
-$data modify storage qiq2i_map2 tower_build_temp.buy_money set from storage qiq2i_map2 tower[{id:$(tower_id)}].buy_money
+$data modify storage qiq2i_map2 tower_build_temp.buy_money set from storage qiq2i_map2 tower[{id:$(tower_id)}].level.1.money
 $data modify storage qiq2i_map2 tower_build_temp.x set value "$(x)"
 $data modify storage qiq2i_map2 tower_build_temp.y set value "$(y)"
 $data modify storage qiq2i_map2 tower_build_temp.z set value "$(z)"
