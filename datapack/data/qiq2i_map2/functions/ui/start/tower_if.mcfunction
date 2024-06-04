@@ -7,4 +7,4 @@ $execute positioned $(x) $(y) $(z) unless block ~ ~ ~ lime_concrete run return r
 scoreboard players set @s qiq2i_map2.ui 2
 $execute positioned $(x) $(y) $(z) positioned ~ ~1 ~ if entity @e[distance=..1,tag=qiq2i_map2.tower] run scoreboard players set @s qiq2i_map2.ui 3
 
-data modify storage qiq2i_map2 marker.tower_uuid set from entity @e[distance=..1,tag=qiq2i_map2.tower,limit=1] UUID
+$execute positioned $(x) $(y) $(z) positioned ~ ~1 ~ run data modify storage qiq2i_map2 marker.tower_uuid set from entity @e[distance=..1,tag=qiq2i_map2.tower,limit=1] UUID
