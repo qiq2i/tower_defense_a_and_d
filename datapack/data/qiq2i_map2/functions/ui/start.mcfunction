@@ -34,7 +34,7 @@ ride @s mount @e[type=block_display,limit=1,sort=nearest,tag=qiq2i_map2.ui.ride,
 execute summon marker run function qiq2i_map2:ui/start/ui.main
 
 ##文本实体
-summon text_display ~ ~ ~ {view_range:1f,shadow_strength:1f,width:0.6f,height:1.5f,billboard:"center",alignment:"left",brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[1.0f,0.0f,-3.8f],scale:[0.6f,0.6f,0.6f]},background:-16777216,Tags:["qiq2i_map2.ui.text","qiq2i_map2.ui.temp.start","qiq2i_map2.ui"]}
+summon text_display ~ ~ ~ {view_range:1f,shadow_strength:1f,width:0.6f,height:1.5f,billboard:"center",alignment:"left",brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[1.0f,1.0f,-2.8f],scale:[0.6f,0.6f,0.6f]},background:-16777216,Tags:["qiq2i_map2.ui.text","qiq2i_map2.ui.temp.start","qiq2i_map2.ui"]}
 
 ##交互实体
 summon interaction ~ ~ ~ {width:1f,height:2f,Tags:["qiq2i_map2.ui.interaction","qiq2i_map2.ui.temp.start","qiq2i_map2.ui"]}

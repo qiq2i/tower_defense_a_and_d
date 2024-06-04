@@ -1,8 +1,8 @@
 ##游戏状态
 function qiq2i_map2:game_state/main
 
-##ui
-function qiq2i_map2:ui/main
+##ui - tick4
+#function qiq2i_map2:ui/main
 
 ##塔防
 function qiq2i_map2:tower_defense/main

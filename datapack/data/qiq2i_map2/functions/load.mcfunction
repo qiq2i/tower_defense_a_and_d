@@ -16,6 +16,7 @@ forceload add 0 0 111 111
 ##tick
 function qiq2i_map2:tick10
 function qiq2i_map2:tick5
+function qiq2i_map2:tick4
 function qiq2i_map2:tick1
 
 ##存储更新
