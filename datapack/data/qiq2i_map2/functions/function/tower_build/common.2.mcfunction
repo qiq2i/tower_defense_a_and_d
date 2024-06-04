@@ -3,6 +3,7 @@ $tag @s add qiq2i_map2.tower.$(id)
 
 $scoreboard players set @s qiq2i_map2.tower.id $(num)
 scoreboard players set @s qiq2i_map2.tower.level 1
+$scoreboard players set @s qiq2i_map2.tower.player $(id)
 
 data modify entity @s NoAI set value 1
 data modify entity @s Invulnerable set value 1
