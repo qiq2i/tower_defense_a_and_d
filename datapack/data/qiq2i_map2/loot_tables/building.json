@@ -1,0 +1,37 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1.0,
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:carrot_on_a_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                              "item_name": "{\"text\":\"§e§n建造防御塔！\"}",
+                              "unbreakable": {},
+                              "custom_data": {
+                                  "qiq2i_map2": "building"
+                              }
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                              {
+                                "text": "瞄准防御塔释放点，右键打开UI。",
+                                "color": "yellow"
+                              }
+                            ],
+                            "mode": "replace_all"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
