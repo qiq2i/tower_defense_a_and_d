@@ -4,12 +4,20 @@ execute if entity @e[type=marker,tag=qiq2i_map2.ui.main,distance=..8] run return
 ####局部存储玩家数据
 data remove storage qiq2i_map2 marker 
 
+##存储玩家数据
+data modify storage qiq2i_map2 marker.Rotation set from entity @s Rotation
+data modify storage qiq2i_map2 marker.uuid set from entity @s UUID
+
 ##获取指向的坐标qiq2i_map2 select_point{x,y,z}
 execute if score @s qiq2i_map2.ui matches 2..3 run function qiq2i_map2:function/get_player_facing_pos
 execute if score @s qiq2i_map2.ui matches 2..3 run function qiq2i_map2:ui/start/tower_if with storage qiq2i_map2 select_point
 execute if score @s qiq2i_map2.ui matches 2..3 run data modify storage qiq2i_map2 marker.facing_pos_x set from storage qiq2i_map2 select_point.x
 execute if score @s qiq2i_map2.ui matches 2..3 run data modify storage qiq2i_map2 marker.facing_pos_y set from storage qiq2i_map2 select_point.y
 execute if score @s qiq2i_map2.ui matches 2..3 run data modify storage qiq2i_map2 marker.facing_pos_z set from storage qiq2i_map2 select_point.z
+
+##选点特效
+execute if score @s qiq2i_map2.ui matches 0 run function qiq2i_map2:function/particles/select_point with storage qiq2i_map2 marker
+execute if score @s qiq2i_map2.ui matches 2..3 run function qiq2i_map2:function/particles/select_point with storage qiq2i_map2 marker
 
 execute if score @s qiq2i_map2.ui matches 0 run return run tellraw @s [{"text":"§c该点不能处理防御塔！"}]
 
@@ -21,10 +29,6 @@ summon block_display ~ ~0.625 ~ {transformation:{left_rotation:[0f,0f,0f,1f],rig
 
 ##玩家 骑乘 上展示实体
 ride @s mount @e[type=block_display,limit=1,sort=nearest,tag=qiq2i_map2.ui.ride,tag=qiq2i_map2.ui.temp.start]
-
-##存储玩家数据
-data modify storage qiq2i_map2 marker.Rotation set from entity @s Rotation
-data modify storage qiq2i_map2 marker.uuid set from entity @s UUID
 
 ##主要标记
 execute summon marker run function qiq2i_map2:ui/start/ui.main
