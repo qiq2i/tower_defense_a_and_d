@@ -1,6 +1,13 @@
 ##游戏状态修改
 data modify storage qiq2i_map2 game_state.value set value "start"
 
+##清除所有怪物和防御塔
+kill @e[tag=qiq2i_map2.tower_defense.mob]
+kill @e[tag=qiq2i_map2.tower]
+
+##清除胡萝卜钓竿
+clear @a minecraft:carrot_on_a_stick
+
 ##删除重创记分板
 scoreboard objectives remove qiq2i_map2
 scoreboard objectives add qiq2i_map2 dummy
