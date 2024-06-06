@@ -1,10 +1,10 @@
 ##交互实体
 $execute on vehicle on passengers as @s[type=interaction,tag=qiq2i_map2.ui.interaction,nbt={attack:{player:$(uuid)}}] run data remove entity @s attack
 
-##召唤僵尸
-$execute if data storage qiq2i_map2 temp_ui_select{ui_id:"summoning.zombie"} run function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"zombie",tellraw:1}
-##召唤鲶鱼
-$execute if data storage qiq2i_map2 temp_ui_select{ui_id:"summoning.guardian"} run function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"guardian",tellraw:1}
+##召唤怪物
+#$execute if data storage qiq2i_map2 temp_ui_select{page:"summoning"} if data storage qiq2i_map2 temp_ui_select{ui_id:"zombie"} run function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"zombie",tellraw:1}
+#$execute if data storage qiq2i_map2 temp_ui_select{page:"summoning"} if data storage qiq2i_map2 temp_ui_select{ui_id:"guardian"} run function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"guardian",tellraw:1}
+$execute if data storage qiq2i_map2 temp_ui_select{page:"summoning"} run function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"$(ui_id)",tellraw:1}
 
 ##建防御塔
 #1

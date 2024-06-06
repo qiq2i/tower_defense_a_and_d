@@ -20,11 +20,12 @@ $execute on vehicle on passengers if data entity @s[type=interaction,tag=qiq2i_m
 ####文本显示
 
 ##获取玩家选取-怪物
-$execute on vehicle on passengers if data entity @s[type=item_display,tag=qiq2i_map2.ui] item.components."minecraft:custom_data"{uuid:$(uuid),x:$(x),y:$(y),id:"summoning.zombie"} run function qiq2i_map2:function/ui/display_mob_in_ui {uuid:$(uuid),mob_id:"zombie"}
-$execute on vehicle on passengers if data entity @s[type=item_display,tag=qiq2i_map2.ui] item.components."minecraft:custom_data"{uuid:$(uuid),x:$(x),y:$(y),id:"summoning.guardian"} run function qiq2i_map2:function/ui/display_mob_in_ui {uuid:$(uuid),mob_id:"guardian"}
+#$execute if data storage qiq2i_map2 temp_ui_select{page:"summoning"} on vehicle on passengers if data entity @s[type=item_display,tag=qiq2i_map2.ui] item.components."minecraft:custom_data"{uuid:$(uuid),x:$(x),y:$(y),id:"zombie"} run function qiq2i_map2:function/ui/display_mob_in_ui {uuid:$(uuid),mob_id:"zombie"}
+#$execute if data storage qiq2i_map2 temp_ui_select{page:"summoning"} on vehicle on passengers if data entity @s[type=item_display,tag=qiq2i_map2.ui] item.components."minecraft:custom_data"{uuid:$(uuid),x:$(x),y:$(y),id:"guardian"} run function qiq2i_map2:function/ui/display_mob_in_ui {uuid:$(uuid),mob_id:"guardian"}
+$execute if data storage qiq2i_map2 temp_ui_select{page:"summoning"} on vehicle on passengers if data entity @s[type=item_display,tag=qiq2i_map2.ui] item.components."minecraft:custom_data"{uuid:$(uuid),x:$(x),y:$(y)} unless data entity @s item.components."minecraft:custom_data"{id:"none"} run function qiq2i_map2:ui/marker/main/select/select_mob with storage qiq2i_map2 temp_ui_select
 
 ##获取玩家选取-建设防御塔
-$execute on vehicle on passengers if data entity @s[type=item_display,tag=qiq2i_map2.ui] item.components."minecraft:custom_data"{uuid:$(uuid),x:$(x),y:$(y),id:"tower.1"} run function qiq2i_map2:function/ui/display_tower_in_ui with storage qiq2i_map2 temp_ui_select
+$execute if data storage qiq2i_map2 temp_ui_select{page:"tower_build"} on vehicle on passengers if data entity @s[type=item_display,tag=qiq2i_map2.ui] item.components."minecraft:custom_data"{uuid:$(uuid),x:$(x),y:$(y)} unless data entity @s item.components."minecraft:custom_data"{id:"none"} run function qiq2i_map2:function/ui/display_tower_in_ui with storage qiq2i_map2 temp_ui_select
 
 ##获取玩家选取-升级防御塔
 $execute on vehicle on passengers if data entity @s[type=item_display,tag=qiq2i_map2.ui] item.components."minecraft:custom_data"{uuid:$(uuid),x:$(x),y:$(y),id:"updata"} run function qiq2i_map2:function/ui/display_tower_updata_in_ui with storage qiq2i_map2 temp_ui_select
