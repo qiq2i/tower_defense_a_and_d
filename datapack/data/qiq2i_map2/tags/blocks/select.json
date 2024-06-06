@@ -3,6 +3,11 @@
         "minecraft:white_carpet",
         "minecraft:yellow_carpet",
         "minecraft:red_carpet",
-        "minecraft:air"
+        "minecraft:air",
+        "minecraft:quartz_slab",
+        "minecraft:oak_slab",
+        "minecraft:crimson_slab",
+        "minecraft:mangrove_slab",
+        "minecraft:bamboo_slab"
     ]
 }
