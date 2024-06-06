@@ -14,3 +14,6 @@ $tellraw @a[nbt={UUID:$(uuid)}] [{"text":"§a成功将防御塔§e$(name)§a从�
 
 ##防御塔名称
 $data modify entity @e[nbt={UUID:$(tower_uuid)},limit=1] CustomName set value '{"text":"$(name) $(up_level)级"}'
+
+##防御塔体型
+$attribute @e[nbt={UUID:$(tower_uuid)},limit=1] minecraft:generic.scale base set $(scale)

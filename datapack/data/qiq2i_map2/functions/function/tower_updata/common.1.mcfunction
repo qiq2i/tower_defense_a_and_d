@@ -5,5 +5,6 @@ $execute unless entity @e[tag=qiq2i_map2.tower.$(id),nbt={UUID:$(tower_uuid)}] r
 $data modify storage qiq2i_map2 tower_updata_temp.tower_id set from storage qiq2i_map2 tower[{num:$(num)}].id
 $data modify storage qiq2i_map2 tower_updata_temp.name set from storage qiq2i_map2 tower[{num:$(num)}].name
 $data modify storage qiq2i_map2 tower_updata_temp.buy_money set from storage qiq2i_map2 tower[{num:$(num)}].level.$(up_level).money
+$data modify storage qiq2i_map2 tower_updata_temp.scale set from storage qiq2i_map2 tower[{num:$(num)}].level.$(up_level).scale
 
 function qiq2i_map2:function/tower_updata/common.2 with storage qiq2i_map2 tower_updata_temp
