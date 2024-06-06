@@ -2,11 +2,11 @@
 $execute if entity @e[type=marker,tag=qiq2i_map2.player,nbt=!{data:{state:"play"}},nbt={data:{id:$(id)b}},limit=1] run return run tellraw @a[nbt={UUID:$(uuid)}] [{"text":"§c你未处于游玩游戏的状态！"}]
 
 ##减去金钱
-scoreboard players reset #qiq2i_map2.tower_build_temp.1 qiq2i_1
-execute store result score #qiq2i_map2.tower_build_temp.1 qiq2i_1 run data get storage qiq2i_map2 tower_build_temp.buy_money
-$execute if score @e[type=marker,tag=qiq2i_map2.player,nbt={data:{id:$(id)b}},limit=1] qiq2i_map2.money < #qiq2i_map2.tower_build_temp.1 qiq2i_1 as @a[nbt={UUID:$(uuid)}] at @s run playsound block.calcite.break ambient @s
-$execute if score @e[type=marker,tag=qiq2i_map2.player,nbt={data:{id:$(id)b}},limit=1] qiq2i_map2.money < #qiq2i_map2.tower_build_temp.1 qiq2i_1 run return run tellraw @a[nbt={UUID:$(uuid)}] [{"text":"§c金币不足！"}]
-$scoreboard players operation @e[type=marker,tag=qiq2i_map2.player,nbt={data:{id:$(id)b}},limit=1] qiq2i_map2.money -= #qiq2i_map2.tower_build_temp.1 qiq2i_1
+scoreboard players reset #qiq2i_map2.tower_updata_temp.1 qiq2i_1
+execute store result score #qiq2i_map2.tower_updata_temp.1 qiq2i_1 run data get storage qiq2i_map2 tower_updata_temp.buy_money
+$execute if score @e[type=marker,tag=qiq2i_map2.player,nbt={data:{id:$(id)b}},limit=1] qiq2i_map2.money < #qiq2i_map2.tower_updata_temp.1 qiq2i_1 as @a[nbt={UUID:$(uuid)}] at @s run playsound block.calcite.break ambient @s
+$execute if score @e[type=marker,tag=qiq2i_map2.player,nbt={data:{id:$(id)b}},limit=1] qiq2i_map2.money < #qiq2i_map2.tower_updata_temp.1 qiq2i_1 run return run tellraw @a[nbt={UUID:$(uuid)}] [{"text":"§c金币不足！"}]
+$scoreboard players operation @e[type=marker,tag=qiq2i_map2.player,nbt={data:{id:$(id)b}},limit=1] qiq2i_map2.money -= #qiq2i_map2.tower_updata_temp.1 qiq2i_1
 
 ##防御塔等级提升！
 $scoreboard players set @e[nbt={UUID:$(tower_uuid)},limit=1] qiq2i_map2.tower.level $(up_level)
