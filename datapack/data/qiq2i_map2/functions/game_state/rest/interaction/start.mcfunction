@@ -5,8 +5,8 @@ data modify storage qiq2i_map2 game_state.value set value "start"
 kill @e[tag=qiq2i_map2.tower_defense.mob]
 kill @e[tag=qiq2i_map2.tower]
 
-##清除胡萝卜钓竿
-clear @a minecraft:carrot_on_a_stick
+##清除物品
+clear @a *[minecraft:custom_data~{qiq2i_map2:"summoning"}|minecraft:custom_data~{qiq2i_map2:"building"}]
 
 ##删除重创记分板
 scoreboard objectives remove qiq2i_map2
