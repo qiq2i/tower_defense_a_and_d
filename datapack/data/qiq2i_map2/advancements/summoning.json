@@ -1,0 +1,19 @@
+{
+    "rewards": {
+        "function": "qiq2i_map2:player_item/summoning"
+    },
+    "criteria": {
+        "1": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "minecraft:custom_data": {
+                            "qiq2i_map2": "summoning"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
