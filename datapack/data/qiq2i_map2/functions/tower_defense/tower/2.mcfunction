@@ -1,6 +1,7 @@
 ##获取数据
 $data modify storage qiq2i_map2 tower_data_temp.damage set from storage qiq2i_map2 tower[{num:$(num)}].level.$(level).damage
 $data modify storage qiq2i_map2 tower_data_temp.range set from storage qiq2i_map2 tower[{num:$(num)}].level.$(level).range
+$data modify storage qiq2i_map2 tower_data_temp.target_count set from storage qiq2i_map2 tower[{num:$(num)}].level.$(level).target_count
 
 ##速度换算公式 y=5/x，从 1次/秒 换算成 5倍的1x0.2秒/次，并多乘100倍，因为记分板数据类型为Int
 scoreboard players set #qiq2i_map2.tower_data_temp.1 qiq2i_1 500
