@@ -1,1 +1,1 @@
-$tp @s ^ ^ ^$(move_speed) ~ ~
+$tp @s ^ ^ ^$(move_speed) ~ 0
