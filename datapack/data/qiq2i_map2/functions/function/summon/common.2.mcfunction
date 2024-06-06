@@ -24,6 +24,6 @@ data modify entity @s NoAI set value 1
 data modify entity @s Invulnerable set value 1
 data modify entity @s DeathLootTable set value ""
 data modify entity @s PersistenceRequired set value 1
-$data modify entity @s CustomName set value '{"text":"$(color_name) §c♥$(health)"}'
+function qiq2i_map2:function/mob/display_mob_name_and_health_in_customname
 data modify entity @s CustomNameVisible set value 1
 $attribute @s minecraft:generic.scale base set $(scale)
