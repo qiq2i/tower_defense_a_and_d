@@ -15,10 +15,6 @@ execute if score @s qiq2i_map2.ui matches 2..3 run data modify storage qiq2i_map
 execute if score @s qiq2i_map2.ui matches 2..3 run data modify storage qiq2i_map2 marker.facing_pos_y set from storage qiq2i_map2 select_point.y
 execute if score @s qiq2i_map2.ui matches 2..3 run data modify storage qiq2i_map2 marker.facing_pos_z set from storage qiq2i_map2 select_point.z
 
-##选点特效
-execute if score @s qiq2i_map2.ui matches 0 run function qiq2i_map2:function/particles/select_point with storage qiq2i_map2 marker
-execute if score @s qiq2i_map2.ui matches 2..3 run function qiq2i_map2:function/particles/select_point with storage qiq2i_map2 marker
-
 execute if score @s qiq2i_map2.ui matches 0 run return run tellraw @s [{"text":"§c该点不能处理防御塔！"}]
 
 ##局部tag清除
@@ -46,6 +42,11 @@ execute as @e[type=!block_display,tag=qiq2i_map2.ui.temp.start] run ride @s moun
 execute if score @s qiq2i_map2.ui matches 1 on vehicle on passengers as @s[tag=qiq2i_map2.ui.main,type=marker] run function qiq2i_map2:ui/pages/summoning/open with entity @s data
 execute if score @s qiq2i_map2.ui matches 2 on vehicle on passengers as @s[tag=qiq2i_map2.ui.main,type=marker] run function qiq2i_map2:ui/pages/tower_build/open with entity @s data
 execute if score @s qiq2i_map2.ui matches 3 on vehicle on passengers as @s[tag=qiq2i_map2.ui.main,type=marker] run function qiq2i_map2:ui/pages/tower_updata/open with entity @s data
+
+##选点特效
+execute if score @s qiq2i_map2.ui matches 0 run function qiq2i_map2:function/particles/select_point with storage qiq2i_map2 marker
+execute if score @s qiq2i_map2.ui matches 2 run function qiq2i_map2:function/particles/select_point with storage qiq2i_map2 marker
+execute if score @s qiq2i_map2.ui matches 3 run function qiq2i_map2:function/particles/tower_uuid with storage qiq2i_map2 marker
 
 ##声音
 playsound block.chest.open ambient @s
