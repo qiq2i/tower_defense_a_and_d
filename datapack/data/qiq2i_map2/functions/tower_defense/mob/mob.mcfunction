@@ -2,10 +2,10 @@
 execute if score @s qiq2i_tower.mob.H matches ..0 run kill @s
 
 ##改变朝向
-execute if block ~ ~-1 ~ minecraft:magenta_glazed_terracotta[facing=west] run scoreboard players set @s qiq2i_tower.mob.fx 1
-execute if block ~ ~-1 ~ minecraft:magenta_glazed_terracotta[facing=south] run scoreboard players set @s qiq2i_tower.mob.fx 2
-execute if block ~ ~-1 ~ minecraft:magenta_glazed_terracotta[facing=east] run scoreboard players set @s qiq2i_tower.mob.fx 3
-execute if block ~ ~-1 ~ minecraft:magenta_glazed_terracotta[facing=north] run scoreboard players set @s qiq2i_tower.mob.fx 4
+execute if block ~ -60 ~ minecraft:magenta_glazed_terracotta[facing=west] run scoreboard players set @s qiq2i_tower.mob.fx 1
+execute if block ~ -60 ~ minecraft:magenta_glazed_terracotta[facing=south] run scoreboard players set @s qiq2i_tower.mob.fx 2
+execute if block ~ -60 ~ minecraft:magenta_glazed_terracotta[facing=east] run scoreboard players set @s qiq2i_tower.mob.fx 3
+execute if block ~ -60 ~ minecraft:magenta_glazed_terracotta[facing=north] run scoreboard players set @s qiq2i_tower.mob.fx 4
 #execute if block ~ ~-1 ~ minecraft:magenta_glazed_terracotta[facing=west] run tp @s ~ ~ ~ -90 0
 #execute if block ~ ~-1 ~ minecraft:magenta_glazed_terracotta[facing=south] run tp @s ~ ~ ~ -180 0
 #execute if block ~ ~-1 ~ minecraft:magenta_glazed_terracotta[facing=east] run tp @s ~ ~ ~ 90 0
