@@ -7,5 +7,4 @@ function qiq2i_map2:game_state/main
 ##塔防
 function qiq2i_map2:tower_defense/main
 
-##玩家物品
-function qiq2i_map2:player_item/main
+##玩家物品 - 采用进度判定
