@@ -12,6 +12,6 @@ $execute if score @e[type=marker,tag=qiq2i_map2.player,nbt={data:{id:$(id)b}},li
 $scoreboard players operation @e[type=marker,tag=qiq2i_map2.player,nbt={data:{id:$(id)b}},limit=1] qiq2i_map2.money -= #qiq2i_map2.tower_build_temp.1 qiq2i_1
 
 ##生成防御塔
-$execute positioned $(x) $(y) $(z) positioned ~ ~1 ~ if data storage qiq2i_map2 tower_build_temp{tower_id:"tower.1"} summon minecraft:pig run function qiq2i_map2:function/tower_build/common.2 with storage qiq2i_map2 tower_build_temp
+$execute positioned $(x) $(y) $(z) positioned ~ ~1 ~ summon $(entity_id) run function qiq2i_map2:function/tower_build/common.2 with storage qiq2i_map2 tower_build_temp
 
 $tellraw @a[nbt={UUID:$(uuid)}] [{"text":"§a成功建造防御塔§e$(name)§a，花费了§e$(buy_money)金币§a。"}]
