@@ -7,7 +7,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:creeper_head",
+                    "name": "minecraft:netherite_sword",
                     "functions": [
                         {
                             "function": "minecraft:set_components",
