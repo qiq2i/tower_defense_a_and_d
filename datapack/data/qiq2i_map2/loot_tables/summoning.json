@@ -23,7 +23,7 @@
                             "function": "minecraft:set_lore",
                             "lore": [
                               {
-                                "text": "右键打开UI。",
+                                "text": "右键打开UI",
                                 "color": "yellow"
                               }
                             ],
