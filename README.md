@@ -65,7 +65,7 @@ Minecraft多人小游戏《塔防攻守战》Tower Defense: Attack & Defense，�
         - **display_tower_in_ui**
         打开ui时的文本显示，适用于升级防御塔数据，对比当前等级和升级后的等级各项数据的对比。
 - **玩家操作使用的物品(简略)**
-函数`qiq2i_map2:player_item/...`负责处理用于释放怪物及操作防御塔的胡萝卜钓竿。
+函数`qiq2i_map2:player_item/...`负责处理用于释放怪物及操作防御塔的物品。
 - **存储**
 函数`qiq2i_map2:storage/...`管理怪物和防御塔的存储信息。
     - **tower**
