@@ -1,6 +1,10 @@
 ####$(x)、$(y)、$(z)为坐标
 data modify storage qiq2i_map2 marker.tower_uuid set from entity @e[distance=..1,tag=qiq2i_map2.tower,limit=1] UUID
 
+data modify storage qiq2i_map2 marker.facing_pos_x set from storage qiq2i_map2 select_point.x
+data modify storage qiq2i_map2 marker.facing_pos_y set from storage qiq2i_map2 select_point.y
+data modify storage qiq2i_map2 marker.facing_pos_z set from storage qiq2i_map2 select_point.z
+
 scoreboard players set @s qiq2i_map2.ui 2
 ##若该处方块不是指定方块
 $execute positioned $(x) $(y) $(z) unless block ~ ~ ~ lime_concrete run scoreboard players set @s qiq2i_map2.ui 3
