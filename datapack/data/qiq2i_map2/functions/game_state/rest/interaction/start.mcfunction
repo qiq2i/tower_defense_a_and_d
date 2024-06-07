@@ -5,6 +5,9 @@ data modify storage qiq2i_map2 game_state.value set value "start"
 kill @e[tag=qiq2i_map2.tower_defense.mob]
 kill @e[tag=qiq2i_map2.tower]
 
+##设置玩家游戏模式
+gamemode creative @a
+
 ##清除物品
 clear @a *[minecraft:custom_data~{qiq2i_map2:"summoning"}|minecraft:custom_data~{qiq2i_map2:"building"}]
 
