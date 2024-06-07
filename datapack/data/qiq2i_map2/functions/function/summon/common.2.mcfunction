@@ -27,3 +27,6 @@ data modify entity @s PersistenceRequired set value 1
 function qiq2i_map2:function/mob/display_mob_name_and_health_in_customname
 data modify entity @s CustomNameVisible set value 1
 $attribute @s minecraft:generic.scale base set $(scale)
+
+##抗性
+effect give @s resistance infinite 5 true
