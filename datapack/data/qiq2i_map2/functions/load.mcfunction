@@ -15,6 +15,7 @@ forceload add 0 0 111 111
 
 setworldspawn 55 -59 55
 gamerule mobGriefing false
+gamerule keepInventory true
 
 ##tick
 function qiq2i_map2:tick10
