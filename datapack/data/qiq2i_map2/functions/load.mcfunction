@@ -13,6 +13,9 @@ scoreboard objectives add qiq2i_map2.ui trigger
 scoreboard objectives add qiq2i_map2.use.coas minecraft.used:minecraft.carrot_on_a_stick
 forceload add 0 0 111 111
 
+setworldspawn 55 -59 55
+gamerule mobGriefing false
+
 ##tick
 function qiq2i_map2:tick10
 function qiq2i_map2:tick5
