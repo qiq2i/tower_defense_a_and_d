@@ -1,0 +1,3 @@
+
+$tellraw @a[nbt={UUID:$(player)}] [{"text":"xiao_qi_zi："},{"clickEvent":{"action":"open_url","value":"https://space.bilibili.com/355336076"},"color":"#FF40FF","hoverEvent":{"action":"show_text","value":[{"text":"点击进入"}]},"text":"[B站：小棋孜]"},{"clickEvent":{"action":"open_url","value":"https://github.com/qiq2i/tower_defense_a_and_d"},"color":"#5A565E","hoverEvent":{"action":"show_text","value":[{"text":"点击进入"}]},"text":"[仓库]"}]
+data remove entity @s interaction

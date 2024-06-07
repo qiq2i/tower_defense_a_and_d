@@ -1,0 +1,2 @@
+$tellraw @a[nbt={UUID:$(player)}] [{"text":"HL_JingYu_LN："},{"clickEvent":{"action":"open_url","value":"https://space.bilibili.com/355925987"},"color":"#FF40FF","hoverEvent":{"action":"show_text","value":[{"text":"点击进入"}]},"text":"[B站：暮风径羽]"}]
+data remove entity @s interaction
