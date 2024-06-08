@@ -25,3 +25,7 @@ function qiq2i_map2:tick1
 
 ##存储更新
 function qiq2i_map2:storage
+
+####地图适配
+data remove storage qiq2i_map2 map
+data modify storage qiq2i_map2 map.id set value "HL_JingYu_LN"
