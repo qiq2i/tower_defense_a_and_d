@@ -1,0 +1,1 @@
+$tp @e[limit=1,nbt={UUID:$(uuid)}] ~ ~ ~
