@@ -11,7 +11,6 @@ scoreboard objectives add qiq2i_map2.tower.player dummy
 scoreboard objectives add qiq2i_map2.tower.tick dummy
 scoreboard objectives add qiq2i_map2.ui trigger
 scoreboard objectives add qiq2i_map2.use.coas minecraft.used:minecraft.carrot_on_a_stick
-forceload add 0 0 111 111
 
 setworldspawn 55 -59 55
 gamerule mobGriefing false
@@ -29,3 +28,7 @@ function qiq2i_map2:storage
 ####地图适配
 data remove storage qiq2i_map2 map
 data modify storage qiq2i_map2 map.id set value "HL_JingYu_LN"
+
+##强制加载
+execute if data storage qiq2i_map2 map{id:"HL_JingYu_LN"} run forceload add -48 -48 48 48
+execute if data storage qiq2i_map2 map{id:"xiao_qi_zi"} run forceload add 0 0 111 111
