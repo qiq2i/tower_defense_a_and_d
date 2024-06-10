@@ -30,3 +30,6 @@ $attribute @s minecraft:generic.scale base set $(scale)
 
 ##抗性
 effect give @s resistance infinite 5 true
+
+##随机位置
+spreadplayers ~ ~ 0.0 1.0 under 29 false @s
