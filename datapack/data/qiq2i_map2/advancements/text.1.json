@@ -1,0 +1,19 @@
+{
+    "rewards": {
+        "function": "qiq2i_map2:player_item/text.1"
+    },
+    "criteria": {
+        "1": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "minecraft:custom_data": {
+                            "qiq2i_map2": "text.1"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

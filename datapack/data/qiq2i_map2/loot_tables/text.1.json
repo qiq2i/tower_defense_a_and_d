@@ -1,0 +1,42 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1.0,
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:oak_hanging_sign",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                              "item_name": "{\"text\":\"§e§n信息显示开关-怪物攻入家园的信息显示\"}",
+                              "food": {
+                                "nutrition":1,
+                                "saturation":1,
+                                "can_always_eat":true,
+                                "eat_seconds":20020221
+                              },
+                              "custom_data": {
+                                  "qiq2i_map2": "text.1"
+                              }
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                              {
+                                "text": "右键操作",
+                                "color": "yellow"
+                              }
+                            ],
+                            "mode": "replace_all"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
