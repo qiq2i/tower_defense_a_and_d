@@ -5,3 +5,4 @@ $function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"trader_lla
 $function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"chicken",tellraw:0}
 $function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"spider",tellraw:0}
 $function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"pillager",tellraw:0}
+$function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"villager",tellraw:0}
