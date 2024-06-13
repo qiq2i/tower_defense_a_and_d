@@ -11,7 +11,7 @@ $execute store result score #qiq2i_map2.tower_data_temp.2 qiq2i_1 run data get s
 scoreboard players operation #qiq2i_map2.tower_data_temp.1 qiq2i_1 /= #qiq2i_map2.tower_data_temp.2 qiq2i_1
 
 ##减速影响
-execute unless score @s qiq2i_map2.tower.sl matches 1.. store result storage qiq2i_map2 tower_data_temp.speed long 1 run scoreboard players get #qiq2i_map2.tower_data_temp.1 qiq2i_1
-execute if score @s qiq2i_map2.tower.sl matches 1.. store result storage qiq2i_map2 tower_data_temp.speed long 0.5 run scoreboard players get #qiq2i_map2.tower_data_temp.1 qiq2i_1
+execute unless score @s qiq2i_map2.tower.js matches 1.. store result storage qiq2i_map2 tower_data_temp.speed long 1 run scoreboard players get #qiq2i_map2.tower_data_temp.1 qiq2i_1
+execute if score @s qiq2i_map2.tower.js matches 1.. store result storage qiq2i_map2 tower_data_temp.speed long 2 run scoreboard players get #qiq2i_map2.tower_data_temp.1 qiq2i_1
 
 function qiq2i_map2:tower_defense/tower/3 with storage qiq2i_map2 tower_data_temp
