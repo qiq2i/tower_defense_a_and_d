@@ -1,0 +1,2 @@
+##$(block)
+$summon block_display ~ ~ ~ {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.5f,0.0f,-0.5f],scale:[1f,1f,1f]},block_state:{Name:"$(block)"},Tags:["qiq2i_map2.block_display.1"]}

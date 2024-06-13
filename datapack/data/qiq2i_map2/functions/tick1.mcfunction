@@ -3,6 +3,7 @@ execute if data storage qiq2i_map2 game_state{value:"start"} run function qiq2i_
 
 ##function
 function qiq2i_map2:function/text_display/text_display
+function qiq2i_map2:function/block_display/block_display
 
 ##game_state
 function qiq2i_map2:game_state/rest/tick1_bc

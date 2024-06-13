@@ -9,6 +9,8 @@ scoreboard objectives add qiq2i_map2.tower.id dummy
 scoreboard objectives add qiq2i_map2.tower.level dummy
 scoreboard objectives add qiq2i_map2.tower.player dummy
 scoreboard objectives add qiq2i_map2.tower.tick dummy
+scoreboard objectives add qiq2i_map2.tower.js dummy
+scoreboard objectives add qiq2i_map2.tower.sl dummy
 scoreboard objectives add qiq2i_map2.ui trigger
 scoreboard objectives add qiq2i_map2.use.coas minecraft.used:minecraft.carrot_on_a_stick
 
