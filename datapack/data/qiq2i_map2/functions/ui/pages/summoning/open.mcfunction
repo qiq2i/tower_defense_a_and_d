@@ -48,6 +48,13 @@ $execute unless data entity @e[type=marker,tag=qiq2i_map2.player,nbt={data:{uuid
 function qiq2i_map2:ui/summoning_ui {id:"none",x:3,y:1,item:"minecraft:glass_pane",enchant:0}
 function qiq2i_map2:ui/summoning_ui {id:"none",x:3,y:0,item:"minecraft:glass_pane",enchant:0}
 
-function qiq2i_map2:ui/summoning_ui {id:"none",x:4,y:0,item:"minecraft:glass_pane",enchant:0}
+$execute if data entity @e[type=marker,tag=qiq2i_map2.player,nbt={data:{uuid:$(uuid)}},limit=1] data.mob[{id:"skeleton",auto:"1"}] run function qiq2i_map2:ui/summoning_ui {id:"skeleton",x:4,y:2,item:"minecraft:skeleton_spawn_egg",enchant:1}
+$execute unless data entity @e[type=marker,tag=qiq2i_map2.player,nbt={data:{uuid:$(uuid)}},limit=1] data.mob[{id:"skeleton",auto:"1"}] run function qiq2i_map2:ui/summoning_ui {id:"skeleton",x:4,y:2,item:"minecraft:skeleton_spawn_egg",enchant:0}
 function qiq2i_map2:ui/summoning_ui {id:"none",x:4,y:1,item:"minecraft:glass_pane",enchant:0}
-function qiq2i_map2:ui/summoning_ui {id:"none",x:4,y:2,item:"minecraft:glass_pane",enchant:0}
+function qiq2i_map2:ui/summoning_ui {id:"none",x:4,y:0,item:"minecraft:glass_pane",enchant:0}
+
+$execute if data entity @e[type=marker,tag=qiq2i_map2.player,nbt={data:{uuid:$(uuid)}},limit=1] data.mob[{id:"zombie_villager",auto:"1"}] run function qiq2i_map2:ui/summoning_ui {id:"zombie_villager",x:-4,y:1,item:"minecraft:zombie_villager_spawn_egg",enchant:1}
+$execute unless data entity @e[type=marker,tag=qiq2i_map2.player,nbt={data:{uuid:$(uuid)}},limit=1] data.mob[{id:"zombie_villager",auto:"1"}] run function qiq2i_map2:ui/summoning_ui {id:"zombie_villager",x:-4,y:1,item:"minecraft:zombie_villager_spawn_egg",enchant:0}
+
+$execute if data entity @e[type=marker,tag=qiq2i_map2.player,nbt={data:{uuid:$(uuid)}},limit=1] data.mob[{id:"sheep",auto:"1"}] run function qiq2i_map2:ui/summoning_ui {id:"sheep",x:-3,y:1,item:"minecraft:sheep_spawn_egg",enchant:1}
+$execute unless data entity @e[type=marker,tag=qiq2i_map2.player,nbt={data:{uuid:$(uuid)}},limit=1] data.mob[{id:"sheep",auto:"1"}] run function qiq2i_map2:ui/summoning_ui {id:"sheep",x:-3,y:1,item:"minecraft:sheep_spawn_egg",enchant:0}

@@ -6,3 +6,6 @@ $function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"chicken",t
 $function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"spider",tellraw:0}
 $function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"pillager",tellraw:0}
 $function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"villager",tellraw:0}
+$function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"skeleton",tellraw:0}
+$function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"zombie_villager",tellraw:0}
+$function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"sheep",tellraw:0}
