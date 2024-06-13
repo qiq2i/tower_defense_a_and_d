@@ -6,3 +6,4 @@ data modify storage qiq2i_map2 mob append value {id:"goat",entity_id:"goat",name
 data modify storage qiq2i_map2 mob append value {id:"trader_llama",entity_id:"trader_llama",name:"行商羊驼",health_max:200,health:200,buy_money:150,loot_money:20,income:14,move_speed:2,scale:0.7,sp_text:"§e特技：自身受到到伤害后，释放者的收入+1。"}
 data modify storage qiq2i_map2 mob append value {id:"chicken",entity_id:"chicken",name:"鸡",health_max:400,health:400,buy_money:300,loot_money:30,income:15,move_speed:3,scale:0.7,sp_text:""}
 data modify storage qiq2i_map2 mob append value {id:"spider",entity_id:"spider",name:"蜘蛛",health_max:600,health:600,buy_money:450,loot_money:45,income:23,move_speed:2,scale:0.5,sp_text:"§e特技：自身受到到伤害后，让4格内所有防御塔的攻速减半，持续5秒。"}
+data modify storage qiq2i_map2 mob append value {id:"pillager",entity_id:"pillager",name:"掠夺者",health_max:1200,health:1200,buy_money:1000,loot_money:100,income:50,move_speed:3,scale:0.5,sp_text:"§e特技：攻入终点后，可窃取其拥有金币数的5%。"}

@@ -11,6 +11,9 @@ function qiq2i_map2:tower_defense/mob/arrive_home/home with storage qiq2i_map2 m
 ##怪物所属编号的存储实体 + 1
 function qiq2i_map2:tower_defense/mob/arrive_home/mob with storage qiq2i_map2 marker
 
+##抵达终点的特殊技能
+function qiq2i_map2:function/mob/mob_into_home_skill with storage qiq2i_map2 marker
+
 ##自灭
 tp @s ~ -64 ~
 kill @s
