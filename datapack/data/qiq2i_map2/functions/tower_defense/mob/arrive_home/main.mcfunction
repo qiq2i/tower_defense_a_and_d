@@ -14,6 +14,10 @@ function qiq2i_map2:tower_defense/mob/arrive_home/mob with storage qiq2i_map2 ma
 ##抵达终点的特殊技能
 function qiq2i_map2:function/mob/mob_into_home_skill with storage qiq2i_map2 marker
 
+##特技：攻入终点后不会消失，会回到起点继续行动。
+execute if entity @s[tag=qiq2i_map2.tower_defense.mob.skeleton] run return run function qiq2i_map2:tower_defense/mob/arrive_home/comeback with storage qiq2i_map2 marker
+execute if entity @s[tag=qiq2i_map2.tower_defense.mob.cat] run return run function qiq2i_map2:tower_defense/mob/arrive_home/comeback with storage qiq2i_map2 marker
+
 ##自灭
 tp @s ~ -64 ~
 kill @s
