@@ -14,4 +14,4 @@ data modify storage qiq2i_map2 mob append value {id:"sheep",entity_id:"sheep",na
 data modify storage qiq2i_map2 mob append value {id:"cow",entity_id:"cow",name:"牛",health_max:27000,health:27000,buy_money:29000,loot_money:2900,income:1450,move_speed:1,scale:1,sp_text:"特技：自身受到伤害后，移速变为8格/秒。"}
 data modify storage qiq2i_map2 mob append value {id:"wandering_trader",entity_id:"wandering_trader",name:"流浪商人",health_max:80000,health:80000,buy_money:51000,loot_money:5100,income:2550,move_speed:2,scale:1,sp_text:"特技：自身受到到伤害后，释放者的收入+170。"}
 data modify storage qiq2i_map2 mob append value {id:"horse",entity_id:"horse",name:"马",health_max:114514,health:114514,buy_money:90000,loot_money:9000,income:4500,move_speed:3,scale:1,sp_text:""}
-data modify storage qiq2i_map2 mob append value {id:"creeper",entity_id:"creeper",name:"苦力怕",health_max:150000,health:150000,buy_money:120000,loot_money:12000,income:6000,move_speed:2,scale:1,sp_text:""}
+data modify storage qiq2i_map2 mob append value {id:"creeper",entity_id:"creeper",name:"苦力怕",health_max:150000,health:150000,buy_money:120000,loot_money:12000,income:6000,move_speed:2,scale:1,sp_text:"特技：自身死亡后，让8格内所有防御塔失灵，持续5秒。"}
