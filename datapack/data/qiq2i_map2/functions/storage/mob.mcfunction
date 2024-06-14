@@ -11,3 +11,6 @@ data modify storage qiq2i_map2 mob append value {id:"villager",entity_id:"villag
 data modify storage qiq2i_map2 mob append value {id:"skeleton",entity_id:"skeleton",name:"骷髅",health_max:15000,health:15000,buy_money:4000,loot_money:400,income:0,move_speed:1,scale:0.5,sp_text:"特技：攻入终点后不会消失，会回到起点继续行动。"}
 data modify storage qiq2i_map2 mob append value {id:"zombie_villager",entity_id:"zombie_villager",name:"僵尸村民",health_max:20000,health:20000,buy_money:10500,loot_money:1050,income:525,move_speed:2,scale:1,sp_text:""}
 data modify storage qiq2i_map2 mob append value {id:"sheep",entity_id:"sheep",name:"绵羊",health_max:12000,health:12000,buy_money:15600,loot_money:1560,income:780,move_speed:5,scale:1,sp_text:""}
+data modify storage qiq2i_map2 mob append value {id:"cow",entity_id:"cow",name:"牛",health_max:27000,health:27000,buy_money:29000,loot_money:2900,income:1450,move_speed:1,scale:1,sp_text:"特技：自身受到伤害后，移速变为8格/秒。"}
+data modify storage qiq2i_map2 mob append value {id:"wandering_trader",entity_id:"wandering_trader",name:"流浪商人",health_max:80000,health:80000,buy_money:51000,loot_money:5100,income:2550,move_speed:2,scale:1,sp_text:"特技：自身受到到伤害后，释放者的收入+170。"}
+data modify storage qiq2i_map2 mob append value {id:"horse",entity_id:"horse",name:"马",health_max:114514,health:114514,buy_money:90000,loot_money:9000,income:4500,move_speed:3,scale:1,sp_text:""}

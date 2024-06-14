@@ -11,27 +11,22 @@ $execute as @e[type=item_display,tag=qiq2i_map2.ui] if data entity @s item.compo
 $execute if data entity @e[type=marker,tag=qiq2i_map2.player,nbt={data:{uuid:$(uuid)}},limit=1] data.mob[{id:"zombie",auto:"1"}] run function qiq2i_map2:ui/summoning_ui {id:"zombie",x:-4,y:2,item:"minecraft:zombie_spawn_egg",enchant:1}
 $execute unless data entity @e[type=marker,tag=qiq2i_map2.player,nbt={data:{uuid:$(uuid)}},limit=1] data.mob[{id:"zombie",auto:"1"}] run function qiq2i_map2:ui/summoning_ui {id:"zombie",x:-4,y:2,item:"minecraft:zombie_spawn_egg",enchant:0}
 function qiq2i_map2:ui/summoning_ui {id:"none",x:-4,y:0,item:"minecraft:glass_pane",enchant:0}
-function qiq2i_map2:ui/summoning_ui {id:"none",x:-4,y:1,item:"minecraft:glass_pane",enchant:0}
 
 $execute if data entity @e[type=marker,tag=qiq2i_map2.player,nbt={data:{uuid:$(uuid)}},limit=1] data.mob[{id:"guardian",auto:"1"}] run function qiq2i_map2:ui/summoning_ui {id:"guardian",x:-3,y:2,item:"minecraft:guardian_spawn_egg",enchant:1}
 $execute unless data entity @e[type=marker,tag=qiq2i_map2.player,nbt={data:{uuid:$(uuid)}},limit=1] data.mob[{id:"guardian",auto:"1"}] run function qiq2i_map2:ui/summoning_ui {id:"guardian",x:-3,y:2,item:"minecraft:guardian_spawn_egg",enchant:0}
 function qiq2i_map2:ui/summoning_ui {id:"none",x:-3,y:0,item:"minecraft:glass_pane",enchant:0}
-function qiq2i_map2:ui/summoning_ui {id:"none",x:-3,y:1,item:"minecraft:glass_pane",enchant:0}
 
 $execute if data entity @e[type=marker,tag=qiq2i_map2.player,nbt={data:{uuid:$(uuid)}},limit=1] data.mob[{id:"goat",auto:"1"}] run function qiq2i_map2:ui/summoning_ui {id:"goat",x:-2,y:2,item:"minecraft:goat_spawn_egg",enchant:1}
 $execute unless data entity @e[type=marker,tag=qiq2i_map2.player,nbt={data:{uuid:$(uuid)}},limit=1] data.mob[{id:"goat",auto:"1"}] run function qiq2i_map2:ui/summoning_ui {id:"goat",x:-2,y:2,item:"minecraft:goat_spawn_egg",enchant:0}
 function qiq2i_map2:ui/summoning_ui {id:"none",x:-2,y:0,item:"minecraft:glass_pane",enchant:0}
-function qiq2i_map2:ui/summoning_ui {id:"none",x:-2,y:1,item:"minecraft:glass_pane",enchant:0}
 
 $execute if data entity @e[type=marker,tag=qiq2i_map2.player,nbt={data:{uuid:$(uuid)}},limit=1] data.mob[{id:"trader_llama",auto:"1"}] run function qiq2i_map2:ui/summoning_ui {id:"trader_llama",x:-1,y:2,item:"minecraft:trader_llama_spawn_egg",enchant:1}
 $execute unless data entity @e[type=marker,tag=qiq2i_map2.player,nbt={data:{uuid:$(uuid)}},limit=1] data.mob[{id:"trader_llama",auto:"1"}] run function qiq2i_map2:ui/summoning_ui {id:"trader_llama",x:-1,y:2,item:"minecraft:trader_llama_spawn_egg",enchant:0}
 function qiq2i_map2:ui/summoning_ui {id:"none",x:-1,y:0,item:"minecraft:glass_pane",enchant:0}
-function qiq2i_map2:ui/summoning_ui {id:"none",x:-1,y:1,item:"minecraft:glass_pane",enchant:0}
 
 $execute if data entity @e[type=marker,tag=qiq2i_map2.player,nbt={data:{uuid:$(uuid)}},limit=1] data.mob[{id:"chicken",auto:"1"}] run function qiq2i_map2:ui/summoning_ui {id:"chicken",x:0,y:2,item:"minecraft:chicken_spawn_egg",enchant:1}
 $execute unless data entity @e[type=marker,tag=qiq2i_map2.player,nbt={data:{uuid:$(uuid)}},limit=1] data.mob[{id:"chicken",auto:"1"}] run function qiq2i_map2:ui/summoning_ui {id:"chicken",x:0,y:2,item:"minecraft:chicken_spawn_egg",enchant:0}
 function qiq2i_map2:ui/summoning_ui {id:"none",x:0,y:0,item:"minecraft:glass_pane",enchant:0}
-function qiq2i_map2:ui/summoning_ui {id:"none",x:0,y:1,item:"minecraft:glass_pane",enchant:0}
 
 $execute if data entity @e[type=marker,tag=qiq2i_map2.player,nbt={data:{uuid:$(uuid)}},limit=1] data.mob[{id:"spider",auto:"1"}] run function qiq2i_map2:ui/summoning_ui {id:"spider",x:1,y:2,item:"minecraft:spider_spawn_egg",enchant:1}
 $execute unless data entity @e[type=marker,tag=qiq2i_map2.player,nbt={data:{uuid:$(uuid)}},limit=1] data.mob[{id:"spider",auto:"1"}] run function qiq2i_map2:ui/summoning_ui {id:"spider",x:1,y:2,item:"minecraft:spider_spawn_egg",enchant:0}
@@ -58,3 +53,12 @@ $execute unless data entity @e[type=marker,tag=qiq2i_map2.player,nbt={data:{uuid
 
 $execute if data entity @e[type=marker,tag=qiq2i_map2.player,nbt={data:{uuid:$(uuid)}},limit=1] data.mob[{id:"sheep",auto:"1"}] run function qiq2i_map2:ui/summoning_ui {id:"sheep",x:-3,y:1,item:"minecraft:sheep_spawn_egg",enchant:1}
 $execute unless data entity @e[type=marker,tag=qiq2i_map2.player,nbt={data:{uuid:$(uuid)}},limit=1] data.mob[{id:"sheep",auto:"1"}] run function qiq2i_map2:ui/summoning_ui {id:"sheep",x:-3,y:1,item:"minecraft:sheep_spawn_egg",enchant:0}
+
+$execute if data entity @e[type=marker,tag=qiq2i_map2.player,nbt={data:{uuid:$(uuid)}},limit=1] data.mob[{id:"cow",auto:"1"}] run function qiq2i_map2:ui/summoning_ui {id:"cow",x:-2,y:1,item:"minecraft:cow_spawn_egg",enchant:1}
+$execute unless data entity @e[type=marker,tag=qiq2i_map2.player,nbt={data:{uuid:$(uuid)}},limit=1] data.mob[{id:"cow",auto:"1"}] run function qiq2i_map2:ui/summoning_ui {id:"cow",x:-2,y:1,item:"minecraft:cow_spawn_egg",enchant:0}
+
+$execute if data entity @e[type=marker,tag=qiq2i_map2.player,nbt={data:{uuid:$(uuid)}},limit=1] data.mob[{id:"wandering_trader",auto:"1"}] run function qiq2i_map2:ui/summoning_ui {id:"wandering_trader",x:-1,y:1,item:"minecraft:wandering_trader_spawn_egg",enchant:1}
+$execute unless data entity @e[type=marker,tag=qiq2i_map2.player,nbt={data:{uuid:$(uuid)}},limit=1] data.mob[{id:"wandering_trader",auto:"1"}] run function qiq2i_map2:ui/summoning_ui {id:"wandering_trader",x:-1,y:1,item:"minecraft:wandering_trader_spawn_egg",enchant:0}
+
+$execute if data entity @e[type=marker,tag=qiq2i_map2.player,nbt={data:{uuid:$(uuid)}},limit=1] data.mob[{id:"horse",auto:"1"}] run function qiq2i_map2:ui/summoning_ui {id:"horse",x:0,y:1,item:"minecraft:horse_spawn_egg",enchant:1}
+$execute unless data entity @e[type=marker,tag=qiq2i_map2.player,nbt={data:{uuid:$(uuid)}},limit=1] data.mob[{id:"horse",auto:"1"}] run function qiq2i_map2:ui/summoning_ui {id:"horse",x:0,y:1,item:"minecraft:horse_spawn_egg",enchant:0}
