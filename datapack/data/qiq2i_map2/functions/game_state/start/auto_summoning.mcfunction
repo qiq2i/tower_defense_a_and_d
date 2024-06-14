@@ -27,5 +27,13 @@ $execute if entity @s[type=marker,tag=qiq2i_map2.player,nbt={data:{mob:[{id:"wan
 $execute if entity @s[type=marker,tag=qiq2i_map2.player,nbt={data:{mob:[{id:"horse",auto:"1"}]}}] run function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"horse",tellraw:0}
 
 $execute if entity @s[type=marker,tag=qiq2i_map2.player,nbt={data:{mob:[{id:"creeper",auto:"1"}]}}] run function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"creeper",tellraw:0}
+
+$execute if entity @s[type=marker,tag=qiq2i_map2.player,nbt={data:{mob:[{id:"fox",auto:"1"}]}}] run function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"fox",tellraw:0}
+
+$execute if entity @s[type=marker,tag=qiq2i_map2.player,nbt={data:{mob:[{id:"allay",auto:"1"}]}}] run function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"allay",tellraw:0}
+
+$execute if entity @s[type=marker,tag=qiq2i_map2.player,nbt={data:{mob:[{id:"cat",auto:"1"}]}}] run function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"cat",tellraw:0}
+
+$execute if entity @s[type=marker,tag=qiq2i_map2.player,nbt={data:{mob:[{id:"wither_skeleton",auto:"1"}]}}] run function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"wither_skeleton",tellraw:0}
 ##测试员村民自动放怪
 $execute if entity @s[type=marker,tag=qiq2i_map2.player,nbt={data:{name:"测试员村民"}}] run function qiq2i_map2:game_state/start/auto_summoning/villager {uuid:$(uuid)}

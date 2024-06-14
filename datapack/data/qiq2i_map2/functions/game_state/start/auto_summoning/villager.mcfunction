@@ -13,3 +13,7 @@ $function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"cow",tellr
 $function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"wandering_trader",tellraw:0}
 $function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"horse",tellraw:0}
 $function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"creeper",tellraw:0}
+$function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"fox",tellraw:0}
+$function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"allay",tellraw:0}
+$function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"cat",tellraw:0}
+$function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"wither_skeleton",tellraw:0}
