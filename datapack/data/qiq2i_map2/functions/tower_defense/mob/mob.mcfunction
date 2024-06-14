@@ -1,6 +1,5 @@
 ##死亡
 execute if score @s qiq2i_tower.mob.H matches ..0 run kill @s
-
 ##改变朝向
 execute if block ~ ~-2 ~ minecraft:magenta_glazed_terracotta[facing=west] run scoreboard players set @s qiq2i_tower.mob.fx 1
 execute if block ~ ~-2 ~ minecraft:magenta_glazed_terracotta[facing=south] run scoreboard players set @s qiq2i_tower.mob.fx 2
@@ -13,7 +12,10 @@ execute if block ~ ~-2 ~ minecraft:magenta_glazed_terracotta[facing=north] run s
 
 ##向前移动
 data remove storage qiq2i_map2 mob_data_temp.move_speed
-execute store result storage qiq2i_map2 mob_data_temp.move_speed float 0.1 run scoreboard players get @s qiq2i_tower.mob.M
+#execute store result storage qiq2i_map2 mob_data_temp.move_speed float 0.1 run scoreboard players get @s qiq2i_tower.mob.M
+execute store result storage qiq2i_map2 mob_data_temp.move_speed float 0.1 run attribute @s generic.movement_speed get 1
+##精度问题
+
 execute at @s if score @s qiq2i_tower.mob.fx matches 1 rotated -90 0 run function qiq2i_map2:tower_defense/mob/move with storage qiq2i_map2 mob_data_temp
 execute at @s if score @s qiq2i_tower.mob.fx matches 2 rotated -180 0 run function qiq2i_map2:tower_defense/mob/move with storage qiq2i_map2 mob_data_temp
 execute at @s if score @s qiq2i_tower.mob.fx matches 3 rotated 90 0 run function qiq2i_map2:tower_defense/mob/move with storage qiq2i_map2 mob_data_temp

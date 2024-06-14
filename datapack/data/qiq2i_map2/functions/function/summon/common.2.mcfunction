@@ -11,7 +11,8 @@ execute store result score @s qiq2i_tower.mob.Hmax run data get storage qiq2i_ma
 execute store result score @s qiq2i_tower.mob.H run data get storage qiq2i_map2 summoning_mob_temp.health
 
 ##移动速度
-execute store result score @s qiq2i_tower.mob.M run data get storage qiq2i_map2 summoning_mob_temp.move_speed
+#execute store result score @s qiq2i_tower.mob.M run data get storage qiq2i_map2 summoning_mob_temp.move_speed
+$attribute @s generic.movement_speed base set $(move_speed)
 
 ##money
 execute store result score @s qiq2i_tower.mob.money run data get storage qiq2i_map2 summoning_mob_temp.loot_money
