@@ -62,3 +62,6 @@ $execute unless data entity @e[type=marker,tag=qiq2i_map2.player,nbt={data:{uuid
 
 $execute if data entity @e[type=marker,tag=qiq2i_map2.player,nbt={data:{uuid:$(uuid)}},limit=1] data.mob[{id:"horse",auto:"1"}] run function qiq2i_map2:ui/summoning_ui {id:"horse",x:0,y:1,item:"minecraft:horse_spawn_egg",enchant:1}
 $execute unless data entity @e[type=marker,tag=qiq2i_map2.player,nbt={data:{uuid:$(uuid)}},limit=1] data.mob[{id:"horse",auto:"1"}] run function qiq2i_map2:ui/summoning_ui {id:"horse",x:0,y:1,item:"minecraft:horse_spawn_egg",enchant:0}
+
+$execute if data entity @e[type=marker,tag=qiq2i_map2.player,nbt={data:{uuid:$(uuid)}},limit=1] data.mob[{id:"creeper",auto:"1"}] run function qiq2i_map2:ui/summoning_ui {id:"creeper",x:1,y:1,item:"minecraft:creeper_spawn_egg",enchant:1}
+$execute unless data entity @e[type=marker,tag=qiq2i_map2.player,nbt={data:{uuid:$(uuid)}},limit=1] data.mob[{id:"creeper",auto:"1"}] run function qiq2i_map2:ui/summoning_ui {id:"creeper",x:1,y:1,item:"minecraft:creeper_spawn_egg",enchant:0}

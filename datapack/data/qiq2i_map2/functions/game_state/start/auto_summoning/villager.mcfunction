@@ -12,3 +12,4 @@ $function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"sheep",tel
 $function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"cow",tellraw:0}
 $function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"wandering_trader",tellraw:0}
 $function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"horse",tellraw:0}
+$function qiq2i_map2:function/summon/input_uuid {uuid:$(uuid),mob_id:"creeper",tellraw:0}
